@@ -1,0 +1,23 @@
+Figma Component,FlutterFlow Widget,Props/Configuration,Notes
+Button - Primary,Button,background: primary_500; textColor: text_inverse; borderRadius: 16; elevation: 2; minHeight: 56,"Use gradient overlay for light mode: primary_500 -> primary_600"
+Button - Secondary,Button,background: surface_elevated; textColor: text_primary; borderColor: border_default; borderWidth: 1; borderRadius: 16; minHeight: 56,Add hover state with border_strong
+Button - Outline,Button,background: transparent; textColor: text_primary; borderColor: border_default; borderWidth: 1; borderRadius: 16; minHeight: 56,
+Button - Ghost,Button,background: transparent; textColor: text_secondary; minHeight: 56,Hover state changes to surface_card
+Input - Text,TextField,background: surface_card; borderColor: border_default; borderRadius: 12; padding: 14; minHeight: 48,"Focus state: borderColor: border_focus, borderWidth: 2"
+Input - Password,TextField,background: surface_card; borderColor: border_default; borderRadius: 12; padding: 14; minHeight: 48; obscureText: true; suffixIcon: IconButton,Suffix icon toggles password visibility
+Input - Error State,TextField,borderColor: error_500; borderWidth: 2,Display error message below with AlertCircle icon
+Chip - Default,Container + InkWell,background: chip_background; textColor: chip_text; borderRadius: full; padding: 10 16; minHeight: 44,
+Chip - Selected,Container + InkWell,background: chip_selected; textColor: chip_selected_text; borderColor: primary_500; borderWidth: 2; borderRadius: full; padding: 10 16,"Add glow effect: boxShadow with primary_500 at 0.1 opacity, 4px spread"
+Checkbox - Unchecked,Checkbox,checkColor: text_inverse; activeColor: primary_500; side: BorderSide(color: border_default; width: 2); shape: RoundedRectangleBorder(borderRadius: 6),Size: 20x20
+Checkbox - Checked,Checkbox,checkColor: text_inverse; activeColor: primary_500 (gradient to primary_600); shape: RoundedRectangleBorder(borderRadius: 6),Animated check with 300ms bounce
+Password Strength Bar,LinearProgressIndicator + Row,backgroundColor: surface_elevated; color: dynamic (error_500/warning_500/success_500); height: 8; borderRadius: full,Color changes based on strength score
+Profile Picture Upload,CircleAvatar + GestureDetector,radius: 64; backgroundColor: surface_elevated; borderColor: border_default; borderWidth: 2; borderStyle: dashed,Center Camera icon (size 32) when empty; overlay Upload icon on hover
+Card - Default,Card,backgroundColor: surface_card; elevation: 2; borderRadius: 12; padding: 24,Add subtle noise texture in light mode
+Card - Glass,Container with BackdropFilter,backgroundColor: surface_card with 70% opacity; blur: 12; borderColor: border_default with 30% opacity; borderRadius: 12,Dark mode uses surface_card at 80% opacity
+Success Icon,Container + Icon,background: gradient success_500; borderRadius: full; size: 128; iconSize: 80; iconColor: text_inverse,"Add ripple rings: 3 expanding circles with success_500 at 10%, 5% opacity"
+Divider with Text,Row with Divider + Text,dividerColor: border_default; dividerHeight: 1; textColor: text_tertiary; spacing: 16,
+Theme Toggle,IconButton + AnimatedSwitcher,background: surface_elevated; elevation: 3; borderRadius: full; size: 48; iconSize: 20,Animate Moon/Sun icon swap with 300ms fade
+Safe Area Wrapper,SafeArea + Padding,minimum: EdgeInsets.only(top: 24; bottom: 16); padding: EdgeInsets.symmetric(horizontal: 24),Use max() to respect device safe area insets
+Screen Container,Scaffold + Container,backgroundColor: surface_background; maxWidth: 390; center horizontally,Wrap body in SingleChildScrollView for overflow
+Loading State,CircularProgressIndicator,color: primary_500; size: 20; strokeWidth: 2,Show in button center when loading=true
+Confetti Animation,Lottie.asset or custom painter,duration: 600ms; particles: 20; colors: primary_500/success_500/warning_500,Fallback to static success icon if Lottie unavailable

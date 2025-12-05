@@ -1,0 +1,45 @@
+Screen,Element Type,Element ID,Aria Label,Semantic Role,Touch Target Size,Notes
+Registration Start,Button,register-email-btn,Register with Email,button,Full width x 56px,Primary CTA with email icon
+Registration Start,Button,google-signin-btn,Continue with Google,button,Full width x 56px,Secondary CTA with Google logo
+Registration Start,Button,apple-signin-btn,Continue with Apple,button,Full width x 56px,Secondary CTA with Apple logo
+Registration Start,Link,sign-in-link,Sign in to existing account,link,Min 44x44px,Interactive text link
+Registration Start,Image,google-logo,Google logo,img,20x20px,Decorative icon in button
+Registration Start,Image,apple-logo,Apple logo,img,20x20px,Decorative icon in button
+
+Create Account,Input,email-input,Email address,textbox,Full width x 48px,Required field with validation
+Create Account,Input,password-input,Password,textbox,Full width x 48px,Required field with strength indicator
+Create Account,Input,confirm-password-input,Confirm password,textbox,Full width x 48px,Required field with match validation
+Create Account,Button,toggle-password-1,Show password,button,44x44px,Toggle password visibility for password field
+Create Account,Button,toggle-password-2,Hide password,button,44x44px,Toggle password visibility for password field
+Create Account,Button,toggle-confirm-password-1,Show password,button,44x44px,Toggle password visibility for confirm field
+Create Account,Button,toggle-confirm-password-2,Hide password,button,44x44px,Toggle password visibility for confirm field
+Create Account,Checkbox,terms-checkbox,I agree to the Terms of Service and Privacy Policy,checkbox,20x20px + label,Required checkbox
+Create Account,Link,terms-link,Terms of Service,link,Min 44x44px,Opens terms modal
+Create Account,Link,privacy-link,Privacy Policy,link,Min 44x44px,Opens privacy modal
+Create Account,Button,create-account-btn,Create account,button,Full width x 56px,Primary submit button
+Create Account,Link,log-in-link,Log in to existing account,link,Min 44x44px,Navigate to login screen
+Create Account,Text,password-strength,Password strength indicator,status,N/A,Live region for screen readers
+Create Account,Checkbox,req-min-length,Password requirement: At least 8 characters,checkbox,20x20px + label,Read-only checkbox (visual indicator)
+Create Account,Checkbox,req-uppercase,Password requirement: 1 uppercase letter,checkbox,20x20px + label,Read-only checkbox (visual indicator)
+Create Account,Checkbox,req-number,Password requirement: 1 number,checkbox,20x20px + label,Read-only checkbox (visual indicator)
+Create Account,Checkbox,req-special,Password requirement: 1 special character,checkbox,20x20px + label,Read-only checkbox (visual indicator)
+Create Account,Alert,email-error,Email validation error,alert,N/A,Error message with icon
+Create Account,Alert,password-error,Password validation error,alert,N/A,Error message with icon
+
+Profile Setup,Input,file-upload,Upload profile picture,button,128x128px,Circular upload area with camera icon
+Profile Setup,Input,full-name-input,Full name,textbox,Full width x 48px,Required field
+Profile Setup,Input,email-display,Email address (pre-filled),textbox,Full width x 48px,Disabled/read-only field
+Profile Setup,Button,chip-plc,Select PLC Programming interest,button,Min 44x44px,Toggleable chip
+Profile Setup,Button,chip-scada,Select SCADA Systems interest,button,Min 44x44px,Toggleable chip
+Profile Setup,Button,chip-hmi,Select HMI Design interest,button,Min 44x44px,Toggleable chip
+Profile Setup,Button,chip-networks,Select Industrial Networks interest,button,Min 44x44px,Toggleable chip
+Profile Setup,Button,chip-robotics,Select Robotics interest,button,Min 44x44px,Toggleable chip
+Profile Setup,Button,save-continue-btn,Save profile and continue,button,Full width x 56px,Primary submit button
+Profile Setup,Link,skip-link,Skip profile setup,link,Full width x 44px,Secondary action
+Profile Setup,Image,profile-preview,Profile picture preview,img,128x128px,User uploaded image
+
+Registration Success,Image,success-icon,Registration successful checkmark,img,128x128px,Decorative success icon
+Registration Success,Button,explore-courses-btn,Explore courses,button,Full width x 56px,Primary CTA
+
+Global,Button,theme-toggle,Switch to dark mode,button,48x48px,Fixed position theme toggle
+Global,Button,theme-toggle-alt,Switch to light mode,button,48x48px,Fixed position theme toggle (dark mode active)

@@ -1,0 +1,174 @@
+{
+  "colorTokens": {
+    "light": {
+      "primary_500": "#0A66FF",
+      "primary_600": "#1376FF",
+      "primary_700": "#0A57D8",
+      "surface_background": "#F6F7F9",
+      "surface_card": "#FFFFFF",
+      "surface_elevated": "#FFFFFF",
+      "text_primary": "#0D0D0F",
+      "text_secondary": "#5A5F6B",
+      "text_tertiary": "#8B92A0",
+      "text_inverse": "#FFFFFF",
+      "border_default": "#E4E7EC",
+      "border_strong": "#D0D5DD",
+      "border_focus": "#0A66FF",
+      "error_500": "#DC2626",
+      "success_500": "#16A34A",
+      "warning_500": "#F59E0B"
+    },
+    "dark": {
+      "primary_500": "#4D9CFF",
+      "primary_600": "#5FA8FF",
+      "primary_700": "#3D8CFF",
+      "surface_background": "#0D0D0F",
+      "surface_card": "#18181B",
+      "surface_elevated": "#27272A",
+      "text_primary": "#F9FAFB",
+      "text_secondary": "#D1D5DB",
+      "text_tertiary": "#9CA3AF",
+      "text_inverse": "#0D0D0F",
+      "border_default": "#27272A",
+      "border_strong": "#3F3F46",
+      "border_focus": "#4D9CFF",
+      "error_500": "#EF4444",
+      "success_500": "#22C55E",
+      "warning_500": "#F59E0B"
+    }
+  },
+  "spacingTokens": {
+    "xs": 2,
+    "sm": 4,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "2xl": 20,
+    "3xl": 24,
+    "4xl": 32,
+    "5xl": 40,
+    "6xl": 48
+  },
+  "radiusTokens": {
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "full": 9999
+  },
+  "typographyTokens": {
+    "h1": {
+      "fontFamily": "Inter",
+      "fontSize": 32,
+      "lineHeight": 40,
+      "fontWeight": "Bold",
+      "letterSpacing": -0.64
+    },
+    "h2": {
+      "fontFamily": "Inter",
+      "fontSize": 28,
+      "lineHeight": 36,
+      "fontWeight": "Bold",
+      "letterSpacing": -0.28
+    },
+    "body": {
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "lineHeight": 24,
+      "fontWeight": "Regular"
+    },
+    "bodySm": {
+      "fontFamily": "Inter",
+      "fontSize": 14,
+      "lineHeight": 20,
+      "fontWeight": "Regular"
+    }
+  },
+  "flutterFlowMapping": {
+    "widgets": {
+      "Button": {
+        "primaryButton": {
+          "backgroundColor": "primary_500",
+          "textColor": "text_inverse",
+          "borderRadius": "lg",
+          "elevation": 2,
+          "padding": "xl",
+          "minHeight": 56
+        },
+        "secondaryButton": {
+          "backgroundColor": "surface_elevated",
+          "textColor": "text_primary",
+          "borderColor": "border_default",
+          "borderWidth": 1,
+          "borderRadius": "lg",
+          "padding": "xl",
+          "minHeight": 56
+        }
+      },
+      "TextField": {
+        "default": {
+          "backgroundColor": "surface_card",
+          "textColor": "text_primary",
+          "borderColor": "border_default",
+          "borderRadius": "md",
+          "padding": "lg",
+          "minHeight": 48
+        },
+        "focused": {
+          "borderColor": "border_focus",
+          "borderWidth": 2
+        },
+        "error": {
+          "borderColor": "error_500"
+        }
+      },
+      "Card": {
+        "default": {
+          "backgroundColor": "surface_card",
+          "borderRadius": "md",
+          "elevation": 2,
+          "padding": "2xl"
+        }
+      },
+      "Chip": {
+        "default": {
+          "backgroundColor": "surface_elevated",
+          "textColor": "text_primary",
+          "borderRadius": "full",
+          "padding": "md"
+        },
+        "selected": {
+          "backgroundColor": "primary_500",
+          "textColor": "text_inverse",
+          "borderColor": "primary_500",
+          "borderWidth": 2
+        }
+      }
+    },
+    "animations": {
+      "buttonPress": {
+        "duration": 160,
+        "curve": "easeOut",
+        "scale": 0.96
+      },
+      "pageTransition": {
+        "duration": 320,
+        "curve": "easeInOut",
+        "type": "slideHorizontal"
+      },
+      "fadeIn": {
+        "duration": 400,
+        "curve": "easeOut"
+      }
+    }
+  },
+  "implementationNotes": {
+    "themeMode": "Use AppState variable 'isDarkMode' to toggle between light and dark color tokens",
+    "safeArea": "Wrap scaffold body with SafeArea widget with minimum padding: top=24, bottom=16",
+    "touchTargets": "All interactive elements must be minimum 44x44 logical pixels",
+    "validation": {
+      "email": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "password": "(?=.{8,})(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*])"
+    },
+    "fonts": "Use Google Fonts: Inter (Regular 400, Medium 500, SemiBold 600, Bold 700)"
+  }
+}

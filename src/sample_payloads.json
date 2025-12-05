@@ -1,0 +1,207 @@
+{
+  "registration": {
+    "request": {
+      "email": "sandra.adams@example.com",
+      "password": "SecurePass123!",
+      "fullName": "Sandra Adams",
+      "profilePicture": "base64_encoded_string_or_url",
+      "interests": ["PLC Programming", "SCADA Systems", "HMI Design"],
+      "agreedToTerms": true,
+      "timestamp": "2025-12-05T10:30:00Z"
+    },
+    "successResponse": {
+      "status": "success",
+      "statusCode": 201,
+      "data": {
+        "userId": "usr_7x9k2m4n8p",
+        "email": "sandra.adams@example.com",
+        "fullName": "Sandra Adams",
+        "profilePicture": "https://cdn.example.com/profiles/usr_7x9k2m4n8p.jpg",
+        "interests": ["PLC Programming", "SCADA Systems", "HMI Design"],
+        "createdAt": "2025-12-05T10:30:00Z",
+        "emailVerified": false,
+        "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+        "refreshToken": "refresh_token_here"
+      },
+      "message": "Account created successfully. Please check your email to verify your account."
+    },
+    "errorResponses": {
+      "emailExists": {
+        "status": "error",
+        "statusCode": 409,
+        "error": {
+          "code": "EMAIL_ALREADY_EXISTS",
+          "message": "An account with this email already exists.",
+          "field": "email"
+        }
+      },
+      "validationError": {
+        "status": "error",
+        "statusCode": 400,
+        "error": {
+          "code": "VALIDATION_ERROR",
+          "message": "Please check your input and try again.",
+          "fields": {
+            "email": "Please enter a valid email address.",
+            "password": "Password must contain 8+ characters, a capital letter, a number, and a special character."
+          }
+        }
+      },
+      "serverError": {
+        "status": "error",
+        "statusCode": 500,
+        "error": {
+          "code": "INTERNAL_SERVER_ERROR",
+          "message": "Something went wrong. Please try again.",
+          "errorId": "err_5x7y9z"
+        }
+      },
+      "networkError": {
+        "status": "error",
+        "statusCode": 0,
+        "error": {
+          "code": "NETWORK_ERROR",
+          "message": "Unable to connect. Please check your internet connection."
+        }
+      }
+    }
+  },
+  "socialAuth": {
+    "googleRequest": {
+      "provider": "google",
+      "idToken": "google_id_token_here",
+      "accessToken": "google_access_token_here"
+    },
+    "appleRequest": {
+      "provider": "apple",
+      "identityToken": "apple_identity_token_here",
+      "authorizationCode": "apple_auth_code_here",
+      "fullName": {
+        "givenName": "John",
+        "familyName": "Doe"
+      }
+    },
+    "socialAuthSuccessResponse": {
+      "status": "success",
+      "statusCode": 200,
+      "data": {
+        "userId": "usr_social_123",
+        "email": "john.doe@gmail.com",
+        "fullName": "John Doe",
+        "profilePicture": "https://lh3.googleusercontent.com/...",
+        "provider": "google",
+        "isNewUser": false,
+        "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+        "refreshToken": "refresh_token_here"
+      },
+      "message": "Successfully authenticated with Google."
+    }
+  },
+  "profileUpdate": {
+    "request": {
+      "userId": "usr_7x9k2m4n8p",
+      "fullName": "Sandra M. Adams",
+      "profilePicture": "base64_encoded_or_url",
+      "interests": ["PLC Programming", "SCADA Systems", "HMI Design", "Robotics"]
+    },
+    "successResponse": {
+      "status": "success",
+      "statusCode": 200,
+      "data": {
+        "userId": "usr_7x9k2m4n8p",
+        "fullName": "Sandra M. Adams",
+        "profilePicture": "https://cdn.example.com/profiles/usr_7x9k2m4n8p_updated.jpg",
+        "interests": ["PLC Programming", "SCADA Systems", "HMI Design", "Robotics"],
+        "updatedAt": "2025-12-05T10:35:00Z"
+      },
+      "message": "Profile updated successfully."
+    }
+  },
+  "imageUpload": {
+    "request": {
+      "file": "multipart/form-data",
+      "userId": "usr_7x9k2m4n8p",
+      "fileType": "image/jpeg"
+    },
+    "successResponse": {
+      "status": "success",
+      "statusCode": 200,
+      "data": {
+        "url": "https://cdn.example.com/profiles/usr_7x9k2m4n8p.jpg",
+        "thumbnailUrl": "https://cdn.example.com/profiles/usr_7x9k2m4n8p_thumb.jpg",
+        "fileSize": 245760,
+        "dimensions": {
+          "width": 800,
+          "height": 800
+        }
+      }
+    },
+    "errorResponses": {
+      "fileTooLarge": {
+        "status": "error",
+        "statusCode": 413,
+        "error": {
+          "code": "FILE_TOO_LARGE",
+          "message": "Image size must be less than 5MB.",
+          "maxSize": 5242880
+        }
+      },
+      "invalidFileType": {
+        "status": "error",
+        "statusCode": 400,
+        "error": {
+          "code": "INVALID_FILE_TYPE",
+          "message": "Only JPG, PNG, and WebP images are allowed.",
+          "allowedTypes": ["image/jpeg", "image/png", "image/webp"]
+        }
+      }
+    }
+  },
+  "analyticsEvents": {
+    "registration_start": {
+      "event": "registration_start",
+      "timestamp": "2025-12-05T10:25:00Z",
+      "properties": {
+        "screen": "registration_start",
+        "source": "organic"
+      }
+    },
+    "register_submit": {
+      "event": "register_submit",
+      "timestamp": "2025-12-05T10:30:00Z",
+      "properties": {
+        "email": "sandra.adams@example.com",
+        "hasProfilePicture": false,
+        "interestsCount": 0
+      }
+    },
+    "profile_saved": {
+      "event": "profile_saved",
+      "timestamp": "2025-12-05T10:35:00Z",
+      "properties": {
+        "userId": "usr_7x9k2m4n8p",
+        "hasProfilePicture": true,
+        "interestsCount": 3,
+        "interests": ["PLC Programming", "SCADA Systems", "HMI Design"]
+      }
+    },
+    "register_success": {
+      "event": "register_success",
+      "timestamp": "2025-12-05T10:35:00Z",
+      "properties": {
+        "userId": "usr_7x9k2m4n8p",
+        "completionTime": 600,
+        "skippedProfile": false
+      }
+    },
+    "profile_picture_uploaded": {
+      "event": "profile_picture_uploaded",
+      "timestamp": "2025-12-05T10:33:00Z",
+      "properties": {
+        "userId": "usr_7x9k2m4n8p",
+        "fileSize": 245760,
+        "uploadMethod": "local_file"
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "registrationStart": {
+    "title": "i18n:registration_start_title",
+    "subtitle": "i18n:registration_start_subtitle",
+    "registerWithEmail": "i18n:register_with_email",
+    "continueWithGoogle": "i18n:continue_with_google",
+    "continueWithApple": "i18n:continue_with_apple",
+    "or": "i18n:or",
+    "alreadyHaveAccount": "i18n:already_have_account",
+    "signIn": "i18n:sign_in"
+  },
+  "createAccount": {
+    "title": "i18n:create_account_title",
+    "emailPlaceholder": "i18n:email_placeholder",
+    "passwordPlaceholder": "i18n:password_placeholder",
+    "confirmPasswordPlaceholder": "i18n:confirm_password_placeholder",
+    "passwordStrength": "i18n:password_strength",
+    "weakPassword": "i18n:weak_password",
+    "mediumPassword": "i18n:medium_password",
+    "strongPassword": "i18n:strong_password",
+    "minLength": "i18n:password_min_length",
+    "hasUppercase": "i18n:password_uppercase",
+    "hasNumber": "i18n:password_number",
+    "hasSpecial": "i18n:password_special",
+    "passwordMismatch": "i18n:passwords_do_not_match",
+    "invalidEmail": "i18n:invalid_email",
+    "agreeTerms": "i18n:agree_to_terms",
+    "termsOfService": "i18n:terms_of_service",
+    "privacyPolicy": "i18n:privacy_policy",
+    "createAccountButton": "i18n:create_account",
+    "alreadyHaveAccount": "i18n:already_have_account",
+    "logIn": "i18n:log_in"
+  },
+  "profileSetup": {
+    "title": "i18n:profile_setup_title",
+    "subtitle": "i18n:profile_setup_subtitle",
+    "uploadPicture": "i18n:upload_profile_picture",
+    "fullNameLabel": "i18n:full_name_label",
+    "fullNamePlaceholder": "i18n:full_name_placeholder",
+    "emailLabel": "i18n:email_label",
+    "interestsLabel": "i18n:learning_interests",
+    "plcProgramming": "i18n:plc_programming",
+    "scadaSystems": "i18n:scada_systems",
+    "hmiDesign": "i18n:hmi_design",
+    "industrialNetworks": "i18n:industrial_networks",
+    "robotics": "i18n:robotics",
+    "saveAndContinue": "i18n:save_and_continue",
+    "skipForNow": "i18n:skip_for_now"
+  },
+  "registrationSuccess": {
+    "title": "i18n:registration_successful",
+    "message": "i18n:registration_success_message",
+    "exploreCourses": "i18n:explore_courses"
+  },
+  "validation": {
+    "emailRequired": "i18n:email_required",
+    "passwordRequired": "i18n:password_required",
+    "nameRequired": "i18n:name_required",
+    "invalidEmail": "i18n:invalid_email_format",
+    "passwordTooShort": "i18n:password_too_short",
+    "passwordsNoMatch": "i18n:passwords_do_not_match"
+  },
+  "errors": {
+    "serverError": "i18n:server_error",
+    "networkError": "i18n:network_error",
+    "tryAgain": "i18n:try_again"
+  },
+  "accessibility": {
+    "switchTheme": "i18n:switch_theme_mode",
+    "hidePassword": "i18n:hide_password",
+    "showPassword": "i18n:show_password",
+    "uploadImage": "i18n:upload_profile_image"
+  }
+}
